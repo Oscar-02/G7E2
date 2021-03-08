@@ -23,14 +23,24 @@ namespace G7E2
                 Console.ReadKey();
                 return;
             }
-            Console.Clear();
-            do
+            if (num < 1 && num > 15)
             {
-                Console.Write('*');
-                i++;
+                Console.WriteLine("El numero digitado no se encuentra dentro del rango de numeros...");
+                Console.WriteLine("El programa se cerrara...");
+                Console.ReadKey();
+                return;
             }
-            while (num != i);
-            Console.ReadKey();
+            else
+            {
+                Console.Clear();
+                do
+                {
+                    Console.Write('*');
+                    i++;
+                }
+                while (num != i);
+                Console.ReadKey();
+            }
         }
     }
 }
