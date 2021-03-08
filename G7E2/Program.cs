@@ -23,7 +23,7 @@ namespace G7E2
                 Console.ReadKey();
                 return;
             }
-            if (num < 1 && num > 15)
+            if (num < 1 || num > 15)
             {
                 Console.WriteLine("El numero digitado no se encuentra dentro del rango de numeros...");
                 Console.WriteLine("El programa se cerrara...");
